@@ -1,0 +1,469 @@
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: beige;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, rgb(132, 0, 255), rgb(215, 95, 255), rgb(132, 0, 255));
+}
+
+::-webkit-scrollbar-thumb:hover {
+    cursor: grabbing;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgb(255, 108, 201), rgb(255, 189, 255), rgb(255, 108, 201));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: url('img/sword1.png'), auto;
+}
+
+body:active {
+    cursor: url('img/sword.png'), auto;
+}
+
+.container {
+    width: 800px;
+    height: 800px;
+    background: linear-gradient(to bottom, rgb(255, 138, 255), rgb(255, 189, 255), rgb(255, 138, 255));
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 4.5rem;
+    text-shadow: 5px 5px 2px rgb(255, 138, 138), -5px -5px 2px rgb(255, 124, 124), -5px 5px 2px rgb(255, 138, 138), 5px -5px 2px rgb(255, 138, 138), 5px 5px 50px rgba(0, 0, 0, .7);
+    flex-direction: column;
+    border-radius: 50px;
+    box-shadow: 5px 5px 100px 10px rgba(0, 0, 0, .175), -5px -5px 100px 10px rgba(0, 0, 0, .175);
+    color: black;
+    border: 2px solid rgba(255, 255, 255, 0.496);
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 150%;
+    background: linear-gradient(#9000ff, #ff00b7);
+    animation: rotate 4s linear infinite;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(to bottom, rgb(255, 138, 255), rgb(255, 189, 255), rgb(255, 138, 255));
+    inset: 3px;
+    border-radius: 45px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.container .hasatu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13rem;
+    margin-top: 100px;
+    gap: 20px;
+    z-index: 1;
+}
+
+.container .hasatu:hover {
+    cursor: url('img/sword.png'), auto;
+}
+
+.container .hasatu:active {
+    cursor: url('img/sword3.png'), auto;
+}
+
+.container:active {
+    cursor: url('img/sword.png'), auto;
+}
+
+.container p:active {
+    cursor: url('img/sword.png'), auto;
+}
+
+.hasatu span#satu:hover {
+    color: rgb(255, 79, 79);
+    text-shadow: 5px 5px 2px rgb(215, 146, 255), -5px -5px 2px rgb(215, 146, 255), -5px 5px 2px rgb(215, 146, 255), 5px -5px 2px rgb(215, 146, 255), 5px 5px 70px rgba(0, 0, 0, .7);
+    transform: scale(1.1);
+    transition: all .4s;
+}
+
+.hasatu span#dua:hover {
+    color: rgb(255, 79, 79);
+    text-shadow: 5px 5px 2px rgb(215, 146, 255), -5px -5px 2px rgb(215, 146, 255), -5px 5px 2px rgb(215, 146, 255), 5px -5px 2px rgb(215, 146, 255), 5px 5px 70px rgba(0, 0, 0, .7);
+    transform: scale(1.1);
+    transition: all .4s;
+}
+
+.hasatu span#tiga:hover {
+    color: rgb(255, 79, 79);
+    text-shadow: 5px 5px 2px rgb(215, 146, 255), -5px -5px 2px rgb(215, 146, 255), -5px 5px 2px rgb(215, 146, 255), 5px -5px 2px rgb(215, 146, 255), 5px 5px 70px rgba(0, 0, 0, .7);
+    transform: scale(1.1);
+    transition: all .4s;
+}
+
+.hasatu span#empat:hover {
+    color: rgb(255, 79, 79);
+    text-shadow: 5px 5px 2px rgb(215, 146, 255), -5px -5px 2px rgb(215, 146, 255), -5px 5px 2px rgb(215, 146, 255), 5px -5px 2px rgb(215, 146, 255), 5px 5px 70px rgba(0, 0, 0, .7);
+    transform: scale(1.1);
+    transition: all .4s;
+}
+
+.hasatu span#satu:active {
+    cursor: url('img/sword3.png'), auto;
+}
+
+.hasatu span#dua:active {
+    cursor: url('img/sword3.png'), auto;
+}
+
+.hasatu span#tiga:active {
+    cursor: url('img/sword3.png'), auto;
+}
+
+.hasatu span#empat:active {
+    cursor: url('img/sword3.png'), auto;
+}
+
+@keyframes glowing {
+
+    0%,
+    100% {
+        text-shadow: 0 0 10px #e674ff, 0 0 20px #ec9aff, 0 0 30px #f4c5ff;
+    }
+
+    100% {
+        text-shadow: 0 0 20px #d900ff, 0 0 30px #ff87fd, 0 0 40px #ffb8fe;
+    }
+}
+
+@keyframes coloring {
+
+    0% {
+        color: rgb(255, 187, 191);
+    }
+
+    15% {
+        color: rgb(255, 155, 162);
+    }
+
+    30% {
+        color: rgb(255, 127, 135);
+    }
+
+    45% {
+        color: rgb(255, 103, 113);
+    }
+
+    60% {
+        color: rgb(255, 83, 95);
+    }
+
+    75% {
+        color: rgb(255, 65, 77);
+    }
+
+    90% {
+        color: rgb(255, 35, 49);
+    }
+
+    100% {
+        color: rgb(255, 0, 17);
+    }
+}
+
+.container p {
+    transform: translateY(-100px);
+    animation: glowing 2.5s infinite alternate ease-in-out;
+    animation: coloring 5s infinite alternate ease-in-out;
+    text-shadow: -5px 5px 2px rgba(0, 0, 0, 0.477);
+    color: rgba(0, 0, 0, .7);
+    z-index: 1;
+}
+
+.container p:hover {
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.477);
+    transition: all .3s;
+    cursor: url('img/sword.png'), auto;
+}
+
+.pic {
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    border-radius: 17px 17px 0px 0px;
+    transform: translateY(50px);
+    z-index: 1;
+}
+
+.pic img {
+    width: 125px;
+    height: 125px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.496);
+    box-shadow: 5px 5px 50px 5px rgb(255, 108, 201), -5px -5px 50px 5px rgb(255, 108, 201);
+}
+
+.pic2 {
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0px 0px 17px 17px;
+    transform: translateY(-50px);
+    z-index: 1;
+}
+
+.pic2 img {
+    width: 125px;
+    height: 125px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.496);
+    box-shadow: 5px 5px 50px 5px rgb(255, 108, 201), -5px -5px 50px 5px rgb(255, 108, 201);
+}
+
+.pic img#img1 {
+    transform: translateX(-120px);
+}
+
+.pic img#img2 {
+    transform: translateX(120px);
+}
+
+.pic2 img#img3 {
+    transform: translateX(-120px);
+}
+
+.pic2 img#img4 {
+    transform: translateX(120px);
+}
+
+.pic img#img1:hover {
+    cursor: url('img/sword.png'), auto;
+    transform: translateX(-120px) scale(1.3);
+    transition: all .3s ease-in;
+}
+
+.pic img#img1:active {
+    cursor: url('img/sword3.png'), auto;
+
+}
+
+.pic img#img2:hover {
+    cursor: url('img/sword.png'), auto;
+    transform: translateX(120px) scale(1.3);
+    transition: all .3s ease-in;
+}
+
+.pic img#img2:active {
+    cursor: url('img/sword3.png'), auto;
+
+}
+
+.pic2 img#img3:hover {
+    cursor: url('img/sword.png'), auto;
+    transform: translateX(-120px) scale(1.3);
+    transition: all .3s ease-in;
+}
+
+.pic2 img#img3:active {
+    cursor: url('img/sword3.png'), auto;
+
+}
+
+.pic2 img#img4:hover {
+    cursor: url('img/sword.png'), auto;
+    transform: translateX(120px) scale(1.3);
+    transition: all .3s ease-in;
+}
+
+.pic2 img#img4:active {
+    cursor: url('img/sword3.png'), auto;
+
+}
+
+.box img:nth-child(1) {
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(2) {
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(3) {
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(4) {
+    top: 20%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(5) {
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(6) {
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(7) {
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(8) {
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(9) {
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(10) {
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(11) {
+    top: 30%;
+    left: 90%;
+    animation: animate 6s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(12) {
+    top: 80%;
+    left: 85%;
+    animation: animate 4s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(13) {
+    top: 55%;
+    left: 95%;
+    animation: animate 3s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(14) {
+    top: 50%;
+    left: 65%;
+    animation: animate 5s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(15) {
+    top: 43%;
+    left: 40%;
+    animation: animate 13s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(16) {
+    top: 45%;
+    left: 1%;
+    animation: animate 11s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(17) {
+    top: 65%;
+    left: 30%;
+    animation: animate 9s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(18) {
+    top: 47%;
+    left: 17%;
+    animation: animate 7s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(19) {
+    top: 95%;
+    left: 15%;
+    animation: animate 5s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(20) {
+    top: 92%;
+    left: 44%;
+    animation: animate 3s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(21) {
+    top: 97%;
+    left: 57%;
+    animation: animate 8s linear infinite;
+    position: absolute;
+}
+
+.box img:nth-child(22) {
+    top: 87%;
+    left: 2%;
+    animation: animate 4s linear infinite;
+    position: absolute;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}

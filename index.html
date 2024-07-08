@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="img/anya.jpg">
+    <title>For Asha Cantik!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="music/pixelland.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+        <div class="pic">
+            <img id="img1" src="img/asha_kecil1.jpg">
+            <img id="img2" src="img/asha_hood1.jpg">
+        </div>
+        <div class="hasatu">
+            <span id="satu">A</span>
+            <span id="dua">S</span>
+            <span id="tiga">H</span>
+            <span id="empat">A</span>
+        </div>
+        <p>Asha lucu.</p>
+        <div class="pic2">
+            <img id="img3" src="img/asha_non.jpg">
+            <img id="img4" src="img/asha_kecil2.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+        <img src="img/love.png" alt="">
+    </div>
+    <script>
+        // Fungsi untuk memulai pemutaran musik
+        function startMusic() {
+            var music = document.getElementById('backgroundMusic');
+            music.play();
+            // Hapus event listener setelah musik mulai diputar
+            document.body.removeEventListener('click', startMusic);
+        }
+
+        // Tambahkan event listener untuk mendeteksi klik pada body
+        document.body.addEventListener('click', startMusic);
+    </script>
+</body>
+
+</html>
