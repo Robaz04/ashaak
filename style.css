@@ -244,24 +244,27 @@ body:active {
 
 .pic img#img1 {
     transform: translateX(-120px);
+    transition: all .3s ease-in;
 }
 
 .pic img#img2 {
     transform: translateX(120px);
+    transition: all .3s ease-in;
 }
 
 .pic2 img#img3 {
     transform: translateX(-120px);
+    transition: all .3s ease-in;
 }
 
 .pic2 img#img4 {
     transform: translateX(120px);
+    transition: all .3s ease-in;
 }
 
 .pic img#img1:hover {
     cursor: url('img/sword.png'), auto;
     transform: translateX(-120px) scale(1.3);
-    transition: all .3s ease-in;
 }
 
 .pic img#img1:active {
@@ -272,7 +275,6 @@ body:active {
 .pic img#img2:hover {
     cursor: url('img/sword.png'), auto;
     transform: translateX(120px) scale(1.3);
-    transition: all .3s ease-in;
 }
 
 .pic img#img2:active {
@@ -283,7 +285,6 @@ body:active {
 .pic2 img#img3:hover {
     cursor: url('img/sword.png'), auto;
     transform: translateX(-120px) scale(1.3);
-    transition: all .3s ease-in;
 }
 
 .pic2 img#img3:active {
@@ -294,7 +295,6 @@ body:active {
 .pic2 img#img4:hover {
     cursor: url('img/sword.png'), auto;
     transform: translateX(120px) scale(1.3);
-    transition: all .3s ease-in;
 }
 
 .pic2 img#img4:active {
